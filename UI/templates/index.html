@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagram Question Answering</title>
+</head>
+<body>
+    <h1>Diagram Question Answering System</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="image">Upload Diagram:</label>
+        <input type="file" name="image" id="image" required>
+        <button type="submit">Process Image</button>
+    </form>
+
+    <form action="/query" method="POST">
+        <label for="query">Ask a Question:</label>
+        <input type="text" name="query" id="query" required>
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html>
